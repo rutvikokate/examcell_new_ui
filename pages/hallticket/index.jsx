@@ -65,7 +65,7 @@ const index = () => {
                     </p>
                     <p><b>HALL TICKET</b></p>
                   </th>
-                  <th class="px-2 text-center w-[20%]">
+                  <th className="px-2 text-center w-[20%]">
                     <Image src={uni} width={80} height={80} />
                   </th>
                 </tr>
@@ -79,19 +79,19 @@ const index = () => {
                   </td>
                 </tr>
 
-                <tr class="sd">
+                <tr className="sd">
                   <td><p>Examination</p></td>
                   <td colspan="2"><p>Third year</p></td>
                 </tr>
-                <tr class="sd">
+                <tr className="sd">
                   <td><p>Held in</p></td>
                   <td colspan="2"><p>2021 December</p></td>
                 </tr>
-                <tr class="sd">
+                <tr className="sd">
                   <td><p>Seat no</p></td>
                   <td colspan="2"><p>50763</p></td>
                 </tr>
-                <tr class="sd">
+                <tr className="sd">
                   <td><p>Branch</p></td>
                   <td colspan="2"><p>Computer</p></td>
                 </tr>
@@ -111,7 +111,7 @@ const index = () => {
                   </tr>
                 ))}
 
-                <tr class="student-signature">
+                <tr className="student-signature">
                   <td colspan="2"><b className='relative top-6'>Student Signature</b></td>
                   <td><b className='relative top-6'>College Seal</b></td>
                   <td><Image src={sign} height={200} alt="sign" /><br /><b>Principal</b></td>
