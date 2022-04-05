@@ -1,4 +1,4 @@
-export const boxControl="bg-white dark:bg-lblack px-6 py-3 rounded-md m-2 basis-1/3 flex items-start flex-col justify-between text-gray-700 dark:text-neutral-300 drop-shadow-2xl"
+export const boxControl="border dark:border-neutral-800 px-6 py-3 rounded-md m-2 basis-1/3 flex items-start flex-col justify-between text-gray-700 dark:text-neutral-300 dark:bg-lblack"
 
 export const  selectStyle = 'w-full rounded-sm px-2 py-1.5 border dark:border-none dark:bg-mblack border-gray-300 my-1'
 export  const radioStyle = "form-check-input appearance-none rounded-full h-4 w-4 border bg-white border-4 checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"

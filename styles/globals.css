@@ -9,7 +9,11 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
-.active{border-bottom:1px solid rgb(9, 128, 76);color:rgb(9, 128, 76)}
+.active{
+  border-bottom:1px solid rgb(9, 128, 76);
+  color:rgb(9, 128, 76);
+  background: rgba(14, 184, 110, 0.178)
+  ;}
 a {
   color: inherit;
   text-decoration: none;
@@ -57,14 +61,14 @@ a {
 }
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #00AA9A; 
+  background: rgb(9, 128, 76); 
 }
 
 .linear-grad{
   background:linear-gradient(135deg, #622774 0%,#c53364 100%);
 }
 
-tr:not(:last-child){ border-bottom:1px solid #dadada;}
+tr:not(:last-child){ border-bottom:1px solid #2e2e2ea1;}
 th,td {
   padding:10px;
 }

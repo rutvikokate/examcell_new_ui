@@ -2,21 +2,21 @@ import React from 'react'
 import SchemeSemester from './FormComponents/SchemeSemester'
 import coursestate from '../pages/api/courseState'
 import Button from './Button'
+import { boxControl } from '../styles/styles'
+import { selectStyle } from '../styles/styles'
 
 import PersonalField from './FormComponents/PersonalField'
 
 const KtForm = (props) => {
-  const boxControl = "bg-white dark:bg-lblack px-6 py-3 rounded-md m-2 basis-1/2 flex items-start flex-col justify-between text-gray-700 dark:text-neutral-300 drop-shadow-2xl"
-
-  const selectStyle = 'w-full rounded-sm px-2 py-1.5 border dark:border-none dark:bg-mblack border-gray-300 my-1'
+  
 
   return (
-    <div className='flex p-2  dark:bg-dbg dark:text-gray-200 rounded-sm mt-4 mb-24 mx-1'>
+    <div className='flex p-2  dark:bg-dbg dark:text-gray-200 rounded-sm mb-24 mx-1'>
       <div id="formWrapper" className='w-full  flex flex-col'>
         <SchemeSemester type={props.type} />
         <div className='flex flex-col md:flex-row my-4'>
-          <div className={`${boxControl} md:w-1/2`}>
-            <h1 className='font-bold text-sm text-primary mb-2'>SELECT YOUR KT SUBJECTS</h1>
+          <div className={`${boxControl} md:w-1/2 basis-1/2`}>
+            <h1 className='font-bold text-sm text-primary mb-2 dark:text-green-400'>SELECT YOUR KT SUBJECTS</h1>
             <div className='flex w-full flex-col'>
               <div className="field">
                 <label><b>Semester</b></label>
@@ -42,8 +42,8 @@ const KtForm = (props) => {
             <Button name="Add"  />
           </div>
 
-          <div className={boxControl}>
-            <h1 className='font-bold text-sm text-primary'>SELECTED KT SUBJECTS</h1>
+          <div  className={`${boxControl} md:w-1/2 basis-1/2`}>
+            <h1 className='font-bold text-sm text-primary dark:text-green-400'>SELECTED KT SUBJECTS</h1>
             <div className="flex w-full flex-col">
               <table className='w-full'>
                 {coursestate.map((item) => (
@@ -61,7 +61,7 @@ const KtForm = (props) => {
         </div>
 
         <div className={`${boxControl}`}>
-          <h1 className='font-bold text-sm text-primary'>SELECTED SUBJECTS</h1>
+          <h1 className='font-bold text-sm text-primary dark:text-green-400'>SELECTED SUBJECTS</h1>
           <table className='my-2 w-full'>
             <tbody>
               <tr>

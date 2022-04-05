@@ -8,7 +8,7 @@ export class index extends Component{
     constructor(){
         super();
         this.state={
-            tog:'KT'
+            tog:'Regular'
         }
     }
 
@@ -22,8 +22,8 @@ export class index extends Component{
             <div>
                 <Navbar />
                 <Sidebar />
-                <div id="formWrapper" className="flex w-full md:w-9/12 ml-auto rounded-md flex-col">
-                    <section className="px-1 rounded-full transition mx-auto w-64 border p-1 inline-flex flex justify-between">
+                <div id="formWrapper" className="mt-2 flex w-full md:w-9/12 ml-auto rounded-md flex-col">
+                    <section className=" rounded-full transition mx-auto w-64 border dark:border-neutral-800 p-1 inline-flex flex justify-between">
                         <button className={`w-1/2 px-3 py-2  ${tog == 'Regular' ? activeTab : ''}`} onClick={(e) => this.setState({tog:'Regular'})}>Regular</button>
                         <button className={`w-1/2 px-3 py-2  ${tog == 'KT' ? activeTab : ''}`} onClick={(e) => this.setState({tog:'KT'})}>KT</button>
                     </section>

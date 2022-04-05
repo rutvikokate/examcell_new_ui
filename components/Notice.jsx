@@ -23,7 +23,7 @@ const Notice = (props) => {
         <div>
             {props.type == 'mobile' ? (
 
-                <Marquee speed={40} className='bg-red-400 sticky' gradient={false}>
+                <Marquee speed={40} className='bg-red-400' gradient={false}>
                     {data.map((item, index) => {
                         return <li className='ml-4 list-decimal'>{item.notice}</li>
                     })}

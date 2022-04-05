@@ -11,11 +11,11 @@ const RegularForm = (props) => {
     console.log(props)
 
     return (
-        <div className='flex p-2 bg-white dark:bg-dbg dark:text-gray-200 rounded-sm mt-4 mb-24 mx-1'>
+        <div className='flex p-2 bg-white dark:bg-dbg dark:text-gray-200 rounded-sm mb-24 mx-1'>
             <div id="formWrapper" className='w-full flex flex-col'>
                 <SchemeSemester type={props.type} />
                 <div className={boxControl}>
-                    <h1 className='font-bold text-sm text-primary'>SELECTED SUBJECTS</h1>
+                    <h1 className='font-bold text-sm text-primary dark:text-green-400'>SELECTED SUBJECTS</h1>
                     <table className='my-2 w-full'>
                         <tbody>
                             <tr>
@@ -34,8 +34,8 @@ const RegularForm = (props) => {
 
                 <div className="flex flex-col md:flex-row">
                     <div className={`${boxControl} basis-1/2`}>
-                        <h1 className='font-bold text-sm text-primary'>PERSONAL DETAILS</h1>
-                        <div id="fieldWrapper" className='mt-4  flex flex-col w-full'>
+                        <h1 className='font-bold text-sm text-primary dark:text-green-400'>PERSONAL DETAILS</h1>
+                        <div id="fieldWrapper" className='mt-2  flex flex-col w-full'>
 
                             <div className="field ">
                                 <label><b>Year of Exam</b></label>
