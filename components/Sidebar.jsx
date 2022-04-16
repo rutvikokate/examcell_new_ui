@@ -1,5 +1,5 @@
 import React from 'react'
-import dp from '../assets/rutvik.jpg'
+import dp from '../assets/dp.jpg'
 import Image from 'next/image'
 import { BiNotepad } from 'react-icons/bi'
 import $ from 'jquery'

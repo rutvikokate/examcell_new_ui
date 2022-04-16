@@ -7,7 +7,7 @@ import Marquee from 'react-fast-marquee'
 import { CgProfile } from 'react-icons/cg'
 import Footer from './Footer'
 import Button from './Button'
-import dp from '../assets/rutvik.jpg'
+import dp from '../assets/dp.jpg'
 import Image from 'next/image'
 import { BiNotepad } from 'react-icons/bi'
 import $ from 'jquery'
@@ -18,7 +18,7 @@ import { inputStyle } from '../styles/styles'
 
 const HomeComponent = () => {
 
-    const [expand,setExpand]=useState(false)
+    const [expand,setExpand]=useState(true)
     const boxControl = "border dark:border-neutral-800 px-6 py-3 rounded-md m-2 basis-1/3 flex items-start flex-col justify-between text-gray-700 dark:text-neutral-300 dark:bg-lblack"
     const selectStyle = 'w-full rounded-sm px-2 py-1.5 border dark:border-none dark:bg-mblack border-gray-300 my-1'
     const radioStyle = "form-check-input appearance-none rounded-full h-4 w-4 border bg-white border-4 checked:border-primary focus:outline-none transition duration-200 mt-1 align-top bg-no-repeat bg-center bg-contain float-left mr-2 cursor-pointer"
@@ -120,7 +120,7 @@ const HomeComponent = () => {
                             <div className='basis-2/3'>
                                 <h1 className="text-3xl mb-2 ">Semester 3</h1>
                                 <p>Exam form is filled and submitted succesfully.</p>
-                                <p>Seat Number : <b>405501</b></p>
+                                <p>Seat Number : <b>-</b></p>
                             </div>
                             <div className='flex flex-col items-center'>
                                 <MdVerified fontSize={48} fill="green" />

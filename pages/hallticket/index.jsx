@@ -5,7 +5,7 @@ import Button from '../../components/Button'
 import Image from 'next/image'
 import fcrit from '../../assets/fcritlogo.png';
 import sign from '../../assets/sign.png';
-import rutvik from '../../assets/rutvik.jpg';
+import rutvik from '../../assets/dp.jpg';
 import uni from '../../assets/uni.png';
 
 const index = () => {

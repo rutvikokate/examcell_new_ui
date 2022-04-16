@@ -19,7 +19,7 @@ export class index extends Component{
         const activeTab="bg-primary rounded-full text-white transition"
         const tog=this.state.tog;
         return (
-            <div>
+            <div className='transition'>
                 <Navbar />
                 <Sidebar />
                 <div id="formWrapper" className="mt-2 flex w-full md:w-9/12 ml-auto rounded-md flex-col">
